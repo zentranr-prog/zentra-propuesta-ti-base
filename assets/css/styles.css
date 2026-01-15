@@ -1,0 +1,99 @@
+/* 🟦 HOJA DE ESTILOS CORPORATIVA - ZENTRANR E.I.R.L.
+   Uso: Importar en todos los archivos HTML del proyecto.
+*/
+
+/* --- IMPORTACIONES --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+/* --- TIPOGRAFÍA Y BASE --- */
+body {
+    font-family: 'Segoe UI', 'Roboto', system-ui, sans-serif;
+    background-color: #F5F7FA; /* Fondo gris muy suave corporativo */
+    color: #555555;
+    margin: 0;
+}
+
+/* Títulos de Alto Impacto (Branding) */
+h1, h2, h3, .brand-font {
+    font-family: 'Arial Black', 'Arial', sans-serif;
+    font-style: normal;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+}
+
+/* --- COMPONENTES GLOBALES --- */
+
+/* Gradiente Corporativo (Header) */
+.gradient-header {
+    background: linear-gradient(135deg, #001F4D 0%, #003B82 100%);
+}
+
+/* --- ESTILOS DE PORTADA (INDEX) --- */
+.card-hover {
+    transition: all 0.3s ease;
+}
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px -5px rgba(0, 59, 130, 0.15); /* Sombra azulada */
+}
+
+/* --- ESTILOS DE PROYECTOS (DIAPOSITIVAS) --- */
+
+/* Clase especial para el BODY de las diapositivas para centrar el contenido */
+body.project-mode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Botón Volver */
+.back-nav {
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 20px;
+}
+.back-link {
+    color: #555555;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.2s;
+    font-family: 'Segoe UI', sans-serif;
+}
+.back-link:hover {
+    color: #0072FF; /* Zentra Blue */
+    transform: translateX(-3px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Contenedor de la Diapositiva (16:9) */
+.slide-container {
+    width: 100%;
+    max-width: 1100px;
+    aspect-ratio: 16/9;
+    background: white;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    /* margin-bottom eliminado según última corrección */
+}
+
+/* Tarjeta de Tecnología (Stack) */
+.tech-card {
+    border-left: 5px solid #0072FF; /* Zentra Blue */
+    transition: all 0.3s ease;
+}
+.tech-card:hover {
+    border-left-color: #00C6FF; /* Cyan Innov */
+    background-color: #f8fafc;
+}

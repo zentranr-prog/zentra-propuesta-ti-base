@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanidad e Inocuidad - Detalle</title>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/svg+xml" href="../assets/icon/zentra-icon.svg">
+
+    <!-- LIBRERÍAS EXTERNAS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- ESTILOS CORPORATIVOS -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #F0F4F8;
+        }
+
+        .module-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-left: 4px solid transparent;
+        }
+
+        .module-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 114, 255, 0.1), 0 4px 6px -2px rgba(0, 114, 255, 0.05);
+            border-left-color: #00C6FF;
+        }
+
+        /* --- TIMELINE ÁGIL (Visualmente Correcto) --- */
+
+        .timeline-item {
+            position: relative;
+            z-index: 10;
+        }
+
+        @media (min-width: 1024px) {
+            .timeline-container {
+                position: relative;
+                padding-top: 0;
+            }
+
+            .timeline-container::before {
+                content: '';
+                position: absolute;
+                /* Alineación exacta al centro de los círculos */
+                top: 5.5rem;
+                left: 5%;
+                width: 90%;
+                height: 3px;
+                background-color: #e2e8f0;
+                z-index: 0;
+            }
+        }
+
+        @media (max-width: 1023px) {
+            .timeline-container {
+                position: relative;
+            }
+
+            .timeline-container::before {
+                content: '';
+                position: absolute;
+                top: 2rem;
+                bottom: 2rem;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 3px;
+                background-color: #e2e8f0;
+                z-index: 0;
+            }
+
+            .timeline-item {
+                margin-bottom: 2rem;
+                background: white;
+                padding: 1.5rem;
+                border-radius: 1rem;
+                border: 1px solid #f1f5f9;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            }
+        }
+
+        .timeline-header-spacer {
+            min-height: 24px;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body class="text-slate-600 antialiased selection:bg-blue-100 selection:text-blue-900">
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="../index.html"
+                    class="flex items-center gap-2 text-slate-500 hover:text-[#0072FF] transition-colors font-medium text-sm group">
+                    <div
+                        class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center group-hover:bg-blue-50 transition-colors">
+                        <i class="fas fa-arrow-left group-hover:-translate-x-1 transition-transform"></i>
+                    </div>
+                    <span class="hidden sm:inline">Volver al Portafolio</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- ENCABEZADO -->
+        <div class="gradient-header rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden mb-8">
+            <div
+                class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#00C6FF] to-transparent opacity-10 pointer-events-none">
+            </div>
+            <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-[#0072FF] rounded-full blur-3xl opacity-20"></div>
+
+            <div class="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+                <div class="max-w-2xl">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span
+                            class="px-3 py-1 rounded bg-white/20 backdrop-blur text-xs font-bold uppercase tracking-wider border border-white/10">Proyecto
+                            05</span>
+                        <span
+                            class="px-3 py-1 rounded bg-yellow-500/20 text-yellow-100 backdrop-blur text-xs font-bold uppercase tracking-wider border border-yellow-400/30">En
+                            Planificación</span>
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight mb-2">
+                        Sanidad e <span class="text-[#00C6FF]">Inocuidad Digital</span>
+                    </h1>
+                    <p class="text-blue-100 text-lg sm:text-xl font-light max-w-xl">
+                        Centralización inteligente de alertas sanitarias y clasificación automática con NLP.
+                    </p>
+                </div>
+                <div class="bg-white/10 p-4 rounded-xl backdrop-blur-sm border border-white/20 shadow-inner">
+                    <img src="../assets/logos/zentra-logo-darkmode.svg" alt="ZENTRANR"
+                        class="h-8 sm:h-10 w-auto opacity-90">
+                </div>
+            </div>
+        </div>
+
+        <!-- GRID DE CONTENIDO -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12">
+
+            <!-- COLUMNA IZQUIERDA: SOLUCIÓN (8 Columnas) -->
+            <div class="lg:col-span-8 flex flex-col gap-6">
+
+                <h2 class="text-2xl font-bold text-[#0D0D0D] flex items-center gap-3 border-b border-slate-200 pb-4">
+                    <span
+                        class="w-8 h-8 rounded-lg bg-blue-100 text-[#0072FF] flex items-center justify-center text-sm">
+                        <i class="fas fa-shield-virus"></i>
+                    </span>
+                    Gestión Sanitaria Inteligente
+                </h2>
+
+                <!-- Tarjeta 1 -->
+                <div
+                    class="module-card bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-slate-200 group cursor-default">
+                    <div class="flex flex-col sm:flex-row gap-5">
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-red-500 to-red-600 text-white flex items-center justify-center text-2xl shadow-lg shadow-red-200 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div>
+                            <h3
+                                class="text-lg font-bold text-slate-800 mb-2 group-hover:text-red-600 transition-colors">
+                                Centralización de Alertas</h3>
+                            <p class="text-slate-600 leading-relaxed text-sm">
+                                Hub unificado que recolecta notificaciones de múltiples canales (correo, web, sistemas
+                                externos). Detecta duplicados automáticamente para evitar ruido y asegura que ninguna
+                                alerta crítica se pierda.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div
+                    class="module-card bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-slate-200 group cursor-default">
+                    <div class="flex flex-col sm:flex-row gap-5">
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white flex items-center justify-center text-2xl shadow-lg shadow-blue-200 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div>
+                            <h3
+                                class="text-lg font-bold text-slate-800 mb-2 group-hover:text-[#0072FF] transition-colors">
+                                Clasificación Automática (NLP)</h3>
+                            <p class="text-slate-600 leading-relaxed text-sm">
+                                Motor de Procesamiento de Lenguaje Natural que "lee" el contenido de cada alerta,
+                                entiende el contexto y la clasifica automáticamente por nivel de urgencia y tipo de
+                                riesgo sanitario.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div
+                    class="module-card bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-slate-200 group cursor-default">
+                    <div class="flex flex-col sm:flex-row gap-5">
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-500 to-green-600 text-white flex items-center justify-center text-2xl shadow-lg shadow-green-200 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div>
+                            <h3
+                                class="text-lg font-bold text-slate-800 mb-2 group-hover:text-green-600 transition-colors">
+                                Gestión de Respuesta Rápida</h3>
+                            <p class="text-slate-600 leading-relaxed text-sm">
+                                Workflows automatizados que asignan la alerta al equipo responsable correcto al
+                                instante. Permite trazar el tiempo de respuesta y la resolución de cada incidente
+                                sanitario.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- COLUMNA DERECHA: SIDEBAR TÉCNICO -->
+            <div class="lg:col-span-4 space-y-6">
+
+                <!-- Card: Stack Tecnológico -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div class="bg-slate-50 px-6 py-4 border-b border-slate-100 flex justify-between items-center">
+                        <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wide">Stack Tecnológico</h3>
+                        <i class="fas fa-microchip text-slate-400"></i>
+                    </div>
+                    <div class="p-6 space-y-6">
+
+                        <!-- Sección Data Pipeline -->
+                        <div>
+                            <div class="flex items-center gap-2 mb-3 text-[#0072FF] font-semibold text-sm">
+                                <i class="fas fa-network-wired"></i> Data Pipeline
+                            </div>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3 text-sm text-slate-600">
+                                    <i class="fas fa-project-diagram text-blue-500 mt-0.5"></i>
+                                    <span><strong>Azure Data Factory</strong><br><span
+                                            class="text-xs text-slate-400">Orquestación ETL</span></span>
+                                </li>
+                                <li class="flex items-start gap-3 text-sm text-slate-600">
+                                    <i class="fas fa-language text-blue-500 mt-0.5"></i>
+                                    <span><strong>Azure AI Language</strong><br><span
+                                            class="text-xs text-slate-400">Análisis de Texto (NLP)</span></span>
+                                </li>
+                                <li class="flex items-start gap-3 text-sm text-slate-600">
+                                    <i class="fas fa-bell text-blue-500 mt-0.5"></i>
+                                    <span><strong>Event Grid</strong><br><span class="text-xs text-slate-400">Gestión de
+                                            Eventos</span></span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="h-px bg-slate-100 w-full"></div>
+
+                        <!-- Sección Core -->
+                        <div>
+                            <div class="flex items-center gap-2 mb-3 text-[#003B82] font-semibold text-sm">
+                                <i class="fas fa-server"></i> Plataforma
+                            </div>
+                            <div class="flex gap-2 flex-wrap">
+                                <span
+                                    class="px-3 py-1 bg-red-50 text-red-600 rounded text-xs font-bold border border-red-100">Java
+                                    Spring</span>
+                                <span
+                                    class="px-3 py-1 bg-red-50 text-red-600 rounded text-xs font-bold border border-red-100">Angular</span>
+                                <span
+                                    class="px-3 py-1 bg-blue-50 text-blue-600 rounded text-xs font-bold border border-blue-100">SQL</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card: Estimación y Equipo -->
+                <div
+                    class="bg-gradient-to-br from-[#003B82] to-[#001F4D] rounded-xl shadow-lg text-white p-6 relative overflow-hidden">
+                    <div class="relative z-10">
+                        <h3 class="font-bold text-blue-100 text-sm uppercase tracking-wide mb-4">Planificación General
+                        </h3>
+
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="bg-white/10 rounded-lg p-3 text-center backdrop-blur-sm">
+                                <span class="block text-2xl font-extrabold text-[#00C6FF]">6</span>
+                                <span class="text-[10px] uppercase text-blue-200 font-bold">Meses Total</span>
+                            </div>
+                            <div class="bg-white/10 rounded-lg p-3 text-center backdrop-blur-sm">
+                                <span class="block text-2xl font-extrabold text-white">6</span>
+                                <span class="text-[10px] uppercase text-blue-200 font-bold">Expertos</span>
+                            </div>
+                        </div>
+
+                        <div class="text-xs text-blue-200 space-y-1">
+                            <p>• 1 Arquitecto de Datos</p>
+                            <p>• 1 Business Analyst (BA)</p>
+                            <p>• 1 Ing. NLP / IA</p>
+                            <p>• 2 Backend Developers</p>
+                            <p>• 1 Frontend Developer</p>
+                            <p>• 1 QA Automation</p>
+                        </div>
+                    </div>
+
+                    <!-- Decoración -->
+                    <i class="fas fa-shield-virus absolute -bottom-4 -right-4 text-8xl text-white opacity-5"></i>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ROADMAP ÁGIL DE EJECUCIÓN (6 MESES - 12 SPRINTS) -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-[#0D0D0D] flex items-center gap-3 mb-6">
+                <span class="w-8 h-8 rounded-lg bg-teal-100 text-teal-600 flex items-center justify-center text-sm">
+                    <i class="fas fa-calendar-alt"></i>
+                </span>
+                Roadmap Ágil
+            </h2>
+
+            <div class="bg-white rounded-xl p-8 shadow-sm border border-slate-200 overflow-hidden overflow-x-auto">
+                <!-- Contenedor Timeline -->
+                <div
+                    class="timeline-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 relative min-w-[800px] lg:min-w-0">
+
+                    <!-- MES 1 -->
+                    <div
+                        class="timeline-item flex flex-col items-center text-center relative z-10 bg-white border border-slate-200 rounded-xl">
+                        <div class="timeline-header-spacer mb-2">
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-slate-400">Mes 1 (Sprints
+                                1-2)</span>
+                        </div>
+                        <div
+                            class="w-12 h-12 rounded-full bg-slate-100 border-4 border-white shadow-md flex items-center justify-center text-slate-600 mb-3 font-bold text-xs relative z-10">
+                            INIC</div>
+                        <h4 class="font-bold text-[#003B82] text-sm">Análisis & ETL</h4>
+                        <p class="text-xs text-slate-500 mt-1">Mapeo de Fuentes</p>
+                        <span
+                            class="mt-2 px-2 py-1 bg-gray-100 text-gray-600 text-[10px] font-bold rounded border border-gray-200">BA
+                            & Data Arch.</span>
+                    </div>
+
+                    <!-- MES 2 -->
+                    <div
+                        class="timeline-item flex flex-col items-center text-center relative z-10 bg-white border border-slate-200 rounded-xl">
+                        <div class="timeline-header-spacer mb-2">
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-slate-400">Mes 2 (Sprints
+                                3-4)</span>
+                        </div>
+                        <div
+                            class="w-12 h-12 rounded-full bg-blue-100 border-4 border-white shadow-md flex items-center justify-center text-blue-600 mb-3 font-bold text-xs relative z-10">
+                            ING</div>
+                        <h4 class="font-bold text-[#003B82] text-sm">Ingesta Datos</h4>
+                        <p class="text-xs text-slate-500 mt-1">Conectores Data Factory</p>
+                        <span
+                            class="mt-2 px-2 py-1 bg-blue-50 text-blue-600 text-[10px] font-bold rounded border border-blue-100">Backend
+                            Dev</span>
+                    </div>
+
+                    <!-- MES 3 (MVP) -->
+                    <div
+                        class="timeline-item flex flex-col items-center text-center relative z-10 bg-white border-2 border-green-100 rounded-xl shadow-sm">
+                        <div class="timeline-header-spacer mb-2">
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-green-600">Mes 3 (Sprints
+                                5-6)</span>
+                        </div>
+                        <div
+                            class="w-12 h-12 rounded-full bg-green-500 border-4 border-white shadow-md flex items-center justify-center text-white mb-3 font-bold text-xs relative z-10 transform scale-110">
+                            MVP</div>
+                        <h4 class="font-bold text-green-700 text-sm">Entrega MVP</h4>
+                        <p class="text-xs text-slate-500 mt-1">Consola Centralizada</p>
+                        <span class="mt-2 px-2 py-1 bg-green-500 text-white text-[10px] font-bold rounded shadow-sm">🚀
+                            Hito Clave</span>
+                    </div>
+
+                    <!-- MES 4 -->
+                    <div
+                        class="timeline-item flex flex-col items-center text-center relative z-10 bg-white border border-slate-200 rounded-xl">
+                        <div class="timeline-header-spacer mb-2">
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-slate-400">Mes 4 (Sprints
+                                7-8)</span>
+                        </div>
+                        <div
+                            class="w-12 h-12 rounded-full bg-yellow-100 border-4 border-white shadow-md flex items-center justify-center text-yellow-600 mb-3 font-bold text-xs relative z-10">
+                            NLP</div>
+                        <h4 class="font-bold text-[#003B82] text-sm">Clasif. Inteligente</h4>
+                        <p class="text-xs text-slate-500 mt-1">Modelo de Lenguaje</p>
+                        <span
+                            class="mt-2 px-2 py-1 bg-yellow-50 text-yellow-600 text-[10px] font-bold rounded border border-yellow-100">AI
+                            Engineer</span>
+                    </div>
+
+                    <!-- MES 5 -->
+                    <div
+                        class="timeline-item flex flex-col items-center text-center relative z-10 bg-white border border-slate-200 rounded-xl">
+                        <div class="timeline-header-spacer mb-2">
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-slate-400">Mes 5 (Sprints
+                                9-10)</span>
+                        </div>
+                        <div
+                            class="w-12 h-12 rounded-full bg-purple-100 border-4 border-white shadow-md flex items-center justify-center text-purple-600 mb-3 font-bold text-xs relative z-10">
+                            WFLOW</div>
+                        <h4 class="font-bold text-[#003B82] text-sm">Workflows</h4>
+                        <p class="text-xs text-slate-500 mt-1">Automatización Rsp.</p>
+                        <span
+                            class="mt-2 px-2 py-1 bg-purple-50 text-purple-600 text-[10px] font-bold rounded border border-purple-100">Fullstack</span>
+                    </div>
+
+                    <!-- MES 6 -->
+                    <div
+                        class="timeline-item flex flex-col items-center text-center relative z-10 bg-white border border-slate-200 rounded-xl">
+                        <div class="timeline-header-spacer mb-2">
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-slate-400">Mes 6 (Sprints
+                                11-12)</span>
+                        </div>
+                        <div
+                            class="w-12 h-12 rounded-full bg-green-100 border-4 border-white shadow-md flex items-center justify-center text-green-600 mb-3 font-bold text-xs relative z-10">
+                            FIN</div>
+                        <h4 class="font-bold text-[#003B82] text-sm">Go-Live Final</h4>
+                        <p class="text-xs text-slate-500 mt-1">Despliegue & Monitoreo</p>
+                        <span
+                            class="mt-2 px-2 py-1 bg-gray-100 text-gray-600 text-[10px] font-bold rounded border border-gray-200">DevOps</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER DE IMPACTO -->
+        <div class="mt-12 border-t border-slate-200 pt-8">
+            <div
+                class="bg-blue-50 rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 border border-blue-100">
+                <div class="flex items-center gap-4">
+                    <div
+                        class="w-12 h-12 rounded-full bg-[#0072FF] text-white flex items-center justify-center text-xl shadow-lg shadow-blue-200">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-[#003B82] text-lg">Impacto Proyectado</h4>
+                        <p class="text-slate-600 text-sm">Respuesta a incidentes sanitarios <strong>3x más
+                                rápida</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-3">
+                    <span
+                        class="px-4 py-2 bg-white rounded-full text-slate-600 text-sm font-medium shadow-sm border border-slate-100 flex items-center gap-2">
+                        <i class="fas fa-bell text-red-500"></i> Alertas 24/7
+                    </span>
+                    <span
+                        class="px-4 py-2 bg-white rounded-full text-slate-600 text-sm font-medium shadow-sm border border-slate-100 flex items-center gap-2">
+                        <i class="fas fa-robot text-blue-500"></i> NLP
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <footer
+            class="mt-20 border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm font-[Segoe UI]">
+            <div class="flex items-center gap-2 mb-4 md:mb-0">
+                <img src="../assets/icon/zentra-icon.svg" alt="Icono"
+                    class="h-6 opacity-50 grayscale hover:grayscale-0 transition-all">
+                <p>&copy; 2026 ZENTRANR E.I.R.L.</p>
+            </div>
+            <p>RUC: 20615150607 | San Juan de Lurigancho, Lima</p>
+        </footer>
+    </main>
+
+</body>
+
+</html>

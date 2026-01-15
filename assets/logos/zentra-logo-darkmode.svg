@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 150">
+  <defs>
+    <style>
+      /* CAMBIO: Texto en blanco */
+      .text-brand { font-family: 'Arial Black', 'Arial', sans-serif; font-weight: 900; font-style: italic; fill: #FFFFFF; text-transform: uppercase; }
+      .text-slogan { font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif; font-weight: 400; fill: #DDDDDD; }
+      .circuit-stroke { fill: none; stroke: white; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; }
+      .circuit-node-empty { fill: none; stroke: white; stroke-width: 4.5; }
+    </style>
+    <linearGradient id="gradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0072ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#003b82;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00c6ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0072ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(20, 30)">
+    <rect x="0" y="0" width="60" height="60" rx="10" fill="url(#gradDark)" />
+    <rect x="40" y="40" width="60" height="60" rx="10" fill="url(#gradDark)" />
+    <rect x="70" y="-10" width="40" height="40" rx="8" fill="url(#gradLight)" />
+    <g>
+        <path d="M 30 36 L 30 50 L 70 50 L 70 64" class="circuit-stroke" />
+        <circle cx="30" cy="30" r="6" class="circuit-node-empty" />
+        <circle cx="70" cy="70" r="6" class="circuit-node-empty" />
+    </g>
+  </g>
+  <g transform="translate(150, 45)">
+    <text x="0" y="60" font-size="70" class="text-brand" letter-spacing="-1.5">ZENTRA NR</text>
+    <text x="2" y="92" font-size="20" class="text-slogan" letter-spacing="0.5">Soluciones e Innovaciones Tecnológicas</text>
+  </g>
+</svg>

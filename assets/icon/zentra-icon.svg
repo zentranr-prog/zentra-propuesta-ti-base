@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 130">
+  <defs>
+    <style>
+      .circuit-stroke { fill: none; stroke: white; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; }
+      .circuit-node-empty { fill: none; stroke: white; stroke-width: 4.5; }
+    </style>
+    <linearGradient id="gradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0072ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#003b82;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00c6ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0072ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(5, 20)">
+    <rect x="0" y="0" width="60" height="60" rx="10" fill="url(#gradDark)" />
+    <rect x="40" y="40" width="60" height="60" rx="10" fill="url(#gradDark)" />
+    <rect x="70" y="-10" width="40" height="40" rx="8" fill="url(#gradLight)" />
+    <g>
+        <path d="M 30 36 L 30 50 L 70 50 L 70 64" class="circuit-stroke" />
+        <circle cx="30" cy="30" r="6" class="circuit-node-empty" />
+        <circle cx="70" cy="70" r="6" class="circuit-node-empty" />
+    </g>
+  </g>
+</svg>
