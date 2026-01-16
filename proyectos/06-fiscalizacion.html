@@ -51,6 +51,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12">
 
             <div class="lg:col-span-8 flex flex-col gap-6">
+                
                 <h2 class="text-2xl font-bold text-[#0D0D0D] flex items-center gap-3 border-b border-slate-200 pb-4">
                     <span
                         class="w-8 h-8 rounded-lg bg-blue-100 text-[#0072FF] flex items-center justify-center text-sm">
@@ -59,12 +60,11 @@
                     Control Remoto y Autónomo
                 </h2>
 
-                <div
-                    class="module-card bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-slate-200 group cursor-default">
+                <div class="module-card bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-slate-200 group cursor-default">
                     <div class="flex flex-col sm:flex-row gap-5">
                         <div
                             class="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500 to-indigo-600 text-white flex items-center justify-center text-2xl shadow-lg shadow-indigo-200 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-drone"></i>
+                            <i class="fas fa-satellite"></i>
                         </div>
                         <div>
                             <h3
@@ -79,8 +79,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="module-card bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-slate-200 group cursor-default">
+                <div class="module-card bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-slate-200 group cursor-default">
                     <div class="flex flex-col sm:flex-row gap-5">
                         <div
                             class="w-14 h-14 rounded-2xl bg-gradient-to-br from-red-500 to-red-600 text-white flex items-center justify-center text-2xl shadow-lg shadow-red-200 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
@@ -99,8 +98,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="module-card bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-slate-200 group cursor-default">
+                <div class="module-card bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-slate-200 group cursor-default">
                     <div class="flex flex-col sm:flex-row gap-5">
                         <div
                             class="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500 to-cyan-600 text-white flex items-center justify-center text-2xl shadow-lg shadow-cyan-200 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
@@ -118,13 +116,49 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="mt-4 bg-gradient-to-r from-[#003B82] to-[#001F4D] rounded-2xl shadow-lg text-white p-8 relative overflow-hidden">
+                    <div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-8">
+                        
+                        <div class="flex items-center gap-8 border-r border-white/10 pr-8 md:min-w-[200px]">
+                            <div class="text-center">
+                                <span class="block text-5xl font-extrabold text-[#00C6FF] tracking-tight">8</span>
+                                <span class="text-[10px] uppercase text-blue-200 font-bold tracking-widest mt-1 block">Meses</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="block text-5xl font-extrabold text-white tracking-tight">9</span>
+                                <span class="text-[10px] uppercase text-blue-200 font-bold tracking-widest mt-1 block">Expertos</span>
+                            </div>
+                        </div>
+
+                        <div class="flex-1 w-full">
+                            <div class="bg-white/5 rounded-xl p-5 border border-white/10 backdrop-blur-sm">
+                                <h4 class="text-xs font-bold text-[#00C6FF] uppercase mb-3 flex items-center gap-2 tracking-wide">
+                                    <i class="fas fa-users"></i> Squad de Operaciones
+                                </h4>
+                                <ul class="grid grid-cols-2 gap-x-4 gap-y-2 text-xs text-blue-100 font-light">
+                                    <li class="flex items-center gap-2"><div class="w-1 h-1 bg-[#00C6FF] rounded-full"></div> 1 Arquitecto IoT</li>
+                                    <li class="flex items-center gap-2"><div class="w-1 h-1 bg-[#00C6FF] rounded-full"></div> 2 Backend Developers</li>
+                                    <li class="flex items-center gap-2"><div class="w-1 h-1 bg-[#00C6FF] rounded-full"></div> 1 Frontend Developer</li>
+                                    <li class="flex items-center gap-2"><div class="w-1 h-1 bg-[#00C6FF] rounded-full"></div> 1 Ing. Visión Comp.</li>
+                                    <li class="flex items-center gap-2"><div class="w-1 h-1 bg-[#00C6FF] rounded-full"></div> 1 Esp. Drones/Robótica</li>
+                                    <li class="flex items-center gap-2"><div class="w-1 h-1 bg-[#00C6FF] rounded-full"></div> 1 Ing. Datos Streaming</li>
+                                    <li class="flex items-center gap-2"><div class="w-1 h-1 bg-[#00C6FF] rounded-full"></div> 1 DevOps Infra</li>
+                                    <li class="flex items-center gap-2"><div class="w-1 h-1 bg-[#00C6FF] rounded-full"></div> 1 QA Automation</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <i class="fas fa-broadcast-tower absolute -bottom-6 -right-6 text-9xl text-white opacity-5 pointer-events-none transform rotate-12"></i>
+                </div>
+
             </div>
 
             <div class="lg:col-span-4 space-y-6">
-                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden sticky top-24">
                     <div class="bg-slate-50 px-6 py-4 border-b border-slate-100 flex justify-between items-center">
-                        <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wide">Stack Tecnológico Complejo
-                        </h3>
+                        <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wide">Arquitectura Técnica</h3>
                         <i class="fas fa-microchip text-slate-400"></i>
                     </div>
                     <div class="p-6 space-y-6">
@@ -134,8 +168,7 @@
                                 <div class="flex items-center gap-2 text-[#0072FF] font-semibold text-sm">
                                     <i class="fas fa-satellite"></i> IoT & Edge Computing
                                 </div>
-                                <span
-                                    class="bg-blue-50 text-blue-600 text-[10px] px-2 py-1 rounded-full font-bold border border-blue-100">Critical</span>
+                                <span class="bg-blue-50 text-blue-600 text-[10px] px-2 py-1 rounded-full font-bold border border-blue-100">Critical</span>
                             </div>
                             <ul class="space-y-3">
                                 <li class="flex items-start gap-3 text-sm text-slate-600">
@@ -160,13 +193,28 @@
                                     </div>
                                 </li>
                             </ul>
+
+                            <div class="mt-4 p-3 bg-amber-50 border border-amber-100 rounded-lg flex flex-col gap-2">
+                                <div class="flex gap-2 items-start">
+                                    <i class="fas fa-exclamation-triangle text-amber-500 text-xs mt-0.5"></i>
+                                    <p class="text-[10px] text-amber-800 leading-tight">
+                                        <strong>Dependencia:</strong> Requiere Drones con soporte SDK y Sensores calibrados.
+                                    </p>
+                                </div>
+                                <div class="flex gap-2 items-start">
+                                    <i class="fas fa-wifi text-amber-500 text-xs mt-0.5"></i>
+                                    <p class="text-[10px] text-amber-800 leading-tight">
+                                        <strong>Red:</strong> Se requiere LoRaWAN/4G para transmisión en vivo.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="h-px bg-slate-100 w-full"></div>
 
                         <div>
                             <div class="flex items-center gap-2 mb-3 text-purple-700 font-semibold text-sm">
-                                <i class="fas fa-stream"></i> Streaming & Big Data
+                                <i class="fas fa-stream"></i> Streaming & Data
                             </div>
                             <ul class="space-y-3">
                                 <li class="flex items-start gap-3 text-sm text-slate-600">
@@ -205,68 +253,108 @@
                                     <i class="fas fa-camera-retro text-teal-500 mt-0.5"></i>
                                     <div class="flex flex-col">
                                         <span class="flex items-center gap-2"><strong>Custom Vision</strong></span>
-                                        <span class="text-xs text-slate-400">Modelos de Detección de Objetos</span>
+                                        <span class="text-xs text-slate-400">Detección de Objetos</span>
                                     </div>
                                 </li>
                                 <li class="flex items-start gap-3 text-sm text-slate-600">
                                     <i class="fas fa-map-marked-alt text-teal-500 mt-0.5"></i>
                                     <div class="flex flex-col">
                                         <span class="flex items-center gap-2"><strong>Azure Maps</strong></span>
-                                        <span class="text-xs text-slate-400">Geospatial Analytics & Rutas</span>
+                                        <span class="text-xs text-slate-400">Geospatial Analytics</span>
                                     </div>
                                 </li>
                             </ul>
                         </div>
 
-                        <div class="mt-4 p-3 bg-red-50 border border-red-100 rounded-lg flex flex-col gap-2">
-                            <div class="flex gap-2 items-start">
-                                <i class="fas fa-exclamation-triangle text-red-500 text-xs mt-0.5"></i>
-                                <p class="text-[10px] text-red-800 leading-tight">
-                                    <strong>Dependencia Hardware:</strong> El éxito depende 100% de Drones Enterprise
-                                    con soporte SDK y Sensores industriales calibrados.
+                        <div class="h-px bg-slate-100 w-full"></div>
+
+                        <div>
+                            <div class="flex items-center gap-2 mb-3 text-[#003B82] font-semibold text-sm">
+                                <i class="fas fa-shield-alt"></i> Seguridad
+                            </div>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3 text-sm text-slate-600">
+                                    <i class="fas fa-border-style text-[#003B82] mt-0.5"></i>
+                                    <div class="flex flex-col">
+                                        <span class="flex items-center gap-2"><strong>WAF (Capa 7)</strong></span>
+                                        <span class="text-xs text-slate-400">Protección OWASP Top 10</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3 text-sm text-slate-600">
+                                    <i class="fas fa-key text-[#003B82] mt-0.5"></i>
+                                    <div class="flex flex-col">
+                                        <span class="flex items-center gap-2"><strong>Azure Key Vault</strong></span>
+                                        <span class="text-xs text-slate-400">Custodia de Secretos</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="h-px bg-slate-100 w-full"></div>
+
+                        <div class="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                            <div class="flex items-center gap-2 mb-3 text-slate-700 font-bold text-xs uppercase tracking-wide">
+                                <i class="fas fa-exchange-alt"></i> Flexibilidad de Nube
+                            </div>
+                            
+                            <div class="mb-3 border-b border-slate-200 pb-2">
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-xs font-bold text-orange-600"><i class="fab fa-aws mr-1"></i> Opción AWS</span>
+                                </div>
+                                <p class="text-[10px] text-slate-500 leading-tight">
+                                    Migración a <strong>AWS IoT Greengrass</strong> (Edge), <strong>Kinesis Video Streams</strong> y <strong>Rekognition</strong>.
                                 </p>
                             </div>
-                            <div class="flex gap-2 items-start">
-                                <i class="fas fa-wifi text-red-500 text-xs mt-0.5"></i>
-                                <p class="text-[10px] text-red-800 leading-tight">
-                                    <strong>Red de Campo:</strong> Se requiere conectividad LoRaWAN/4G para la
-                                    transmisión en vivo; caso contrario, operación asíncrona (Store & Forward).
+
+                            <div>
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-xs font-bold text-purple-700"><i class="fas fa-server mr-1"></i> On-Premise</span>
+                                    <span class="text-[9px] bg-purple-100 text-purple-700 px-1.5 rounded border border-purple-200">Local</span>
+                                </div>
+                                <p class="text-[10px] text-slate-500 leading-tight">
+                                    Gestión Edge con <strong>Open Horizon</strong>, ingesta con <strong>Kafka</strong> e inferencia local con <strong>YOLO/OpenCV</strong>.
                                 </p>
                             </div>
                         </div>
 
-                    </div>
-                </div>
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center gap-2 text-purple-700 font-semibold text-sm">
+                                    <i class="fas fa-server"></i> Infraestructura
+                                </div>
+                                <span class="bg-purple-50 text-purple-600 text-[10px] px-2 py-1 rounded-full font-bold border border-purple-100">Cloud Native</span>
+                            </div>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3 text-sm text-slate-600">
+                                    <i class="fab fa-docker text-blue-500 mt-0.5"></i>
+                                    <span><strong>Docker</strong><br><span class="text-xs text-slate-400">Contenedorización</span></span>
+                                </li>
+                                <li class="flex items-start gap-3 text-sm text-slate-600">
+                                    <i class="fas fa-network-wired text-blue-500 mt-0.5"></i>
+                                    <span><strong>Azure Kubernetes (AKS)</strong><br><span class="text-xs text-slate-400">Orquestación</span></span>
+                                </li>
+                                <li class="flex items-start gap-3 text-sm text-slate-600">
+                                    <i class="fas fa-rocket text-blue-500 mt-0.5"></i>
+                                    <span><strong>DevOps (CI/CD)</strong><br><span class="text-xs text-slate-400">Pipelines Automatizados</span></span>
+                                </li>
+                            </ul>
+                        </div>
 
-                <div
-                    class="bg-gradient-to-br from-[#003B82] to-[#001F4D] rounded-xl shadow-lg text-white p-6 relative overflow-hidden">
-                    <div class="relative z-10">
-                        <h3 class="font-bold text-blue-100 text-sm uppercase tracking-wide mb-4">Planificación General
-                        </h3>
-                        <div class="grid grid-cols-2 gap-4 mb-4">
-                            <div class="bg-white/10 rounded-lg p-3 text-center backdrop-blur-sm">
-                                <span class="block text-2xl font-extrabold text-[#00C6FF]">8</span>
-                                <span class="text-[10px] uppercase text-blue-200 font-bold">Meses (Complejo)</span>
+                        <div>
+                            <div class="flex items-center gap-2 mb-3 text-slate-600 font-semibold text-sm">
+                                <i class="fas fa-code"></i> Desarrollo (Agnóstico)
                             </div>
-                            <div class="bg-white/10 rounded-lg p-3 text-center backdrop-blur-sm">
-                                <span class="block text-2xl font-extrabold text-white">9</span> <span
-                                    class="text-[10px] uppercase text-blue-200 font-bold">Expertos</span>
+                            <div class="flex gap-2 flex-wrap">
+                                <span class="px-2 py-1 bg-white text-slate-600 rounded text-xs font-bold border border-slate-200">Java Spring</span>
+                                <span class="px-2 py-1 bg-white text-slate-600 rounded text-xs font-bold border border-slate-200">Angular</span>
+                                <span class="px-2 py-1 bg-white text-slate-600 rounded text-xs font-bold border border-slate-200">Docker</span>
                             </div>
                         </div>
-                        <div class="text-xs text-blue-200 space-y-1">
-                            <p>• 1 Arquitecto IoT Solutions</p>
-                            <p>• 1 Ing. Visión Computacional</p>
-                            <p>• 1 Ing. de Datos (Streaming)</p>
-                            <p>• 1 Especialista en Drones/Robótica</p>
-                            <p>• 2 Backend Developers (Java/Python)</p>
-                            <p>• 1 Frontend Developer</p>
-                            <p>• 1 QA Automation</p>
-                            <p>• 1 DevOps (Infraestructura)</p>
-                        </div>
+
                     </div>
-                    <i class="fas fa-broadcast-tower absolute -bottom-4 -right-4 text-8xl text-white opacity-5"></i>
                 </div>
             </div>
+
         </div>
 
         <div class="mb-12">
@@ -280,77 +368,59 @@
             <div class="bg-white rounded-xl p-8 shadow-sm border border-slate-200 overflow-hidden overflow-x-auto">
                 <div class="timeline-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative min-w-0">
 
-                    <div
-                        class="timeline-item flex flex-col items-center text-center relative z-10 bg-white border border-slate-100 p-4 rounded-2xl hover:shadow-md transition-shadow">
+                    <div class="timeline-item flex flex-col items-center text-center relative z-10 bg-white border border-slate-100 p-4 rounded-2xl hover:shadow-md transition-shadow">
                         <div class="mb-2">
                             <span class="text-[10px] uppercase tracking-wider font-bold text-slate-400">Mes 1-2</span>
                         </div>
                         <div class="flex gap-1 mb-3">
-                            <div
-                                class="w-10 h-10 rounded-full bg-slate-50 border-2 border-white shadow-sm flex items-center justify-center text-slate-500 font-bold text-[10px]">
-                                POC</div>
+                            <div class="w-10 h-10 rounded-full bg-slate-50 border-2 border-white shadow-sm flex items-center justify-center text-slate-500 font-bold text-[10px]">POC</div>
                         </div>
                         <h4 class="font-bold text-[#003B82] text-sm">Prueba Concepto</h4>
-                        <p class="text-[11px] text-slate-500 mt-1 leading-tight">Selección Hardware<br>& Pruebas Vuelo
-                        </p>
-                        <span class="mt-3 px-2 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold rounded">Robótica
-                            & BA</span>
+                        <p class="text-[11px] text-slate-500 mt-1 leading-tight">Selección Hardware<br>& Pruebas Vuelo</p>
+                        <span class="mt-3 px-2 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold rounded">Robótica & BA</span>
                     </div>
 
-                    <div
-                        class="timeline-item flex flex-col items-center text-center relative z-10 bg-green-50/30 border-2 border-green-200 p-4 rounded-2xl shadow-sm transform scale-105">
+                    <div class="timeline-item flex flex-col items-center text-center relative z-10 bg-green-50/30 border-2 border-green-200 p-4 rounded-2xl shadow-sm transform scale-105">
                         <div class="mb-2">
                             <span class="text-[10px] uppercase tracking-wider font-bold text-green-600">Mes 3-4</span>
                         </div>
-                        <div
-                            class="w-14 h-14 rounded-full bg-green-500 border-4 border-white shadow-md flex items-center justify-center text-white mb-3 font-bold text-xs">
+                        <div class="w-14 h-14 rounded-full bg-green-500 border-4 border-white shadow-md flex items-center justify-center text-white mb-3 font-bold text-xs">
                             MVP
                         </div>
                         <h4 class="font-bold text-green-700 text-sm">Entrega MVP</h4>
-                        <p class="text-[11px] text-slate-600 mt-1 leading-tight font-medium">Telemetría
-                            Básica<br>Sensores IoT</p>
-                        <span
-                            class="mt-3 px-3 py-1 bg-green-500 text-white text-[10px] font-bold rounded-full shadow-sm animate-pulse">🚀
-                            Hito Clave</span>
+                        <p class="text-[11px] text-slate-600 mt-1 leading-tight font-medium">Telemetría Básica<br>Sensores IoT</p>
+                        <span class="mt-3 px-3 py-1 bg-green-500 text-white text-[10px] font-bold rounded-full shadow-sm animate-pulse">🚀 Hito Clave</span>
                     </div>
 
-                    <div
-                        class="timeline-item flex flex-col items-center text-center relative z-10 bg-white border border-slate-100 p-4 rounded-2xl hover:shadow-md transition-shadow">
+                    <div class="timeline-item flex flex-col items-center text-center relative z-10 bg-white border border-slate-100 p-4 rounded-2xl hover:shadow-md transition-shadow">
                         <div class="mb-2">
                             <span class="text-[10px] uppercase tracking-wider font-bold text-slate-400">Mes 5-6</span>
                         </div>
-                        <div
-                            class="w-14 h-14 rounded-full bg-cyan-100 border-4 border-white shadow-md flex items-center justify-center text-cyan-600 mb-3 font-bold text-xs">
+                        <div class="w-14 h-14 rounded-full bg-cyan-100 border-4 border-white shadow-md flex items-center justify-center text-cyan-600 mb-3 font-bold text-xs">
                             VIS
                         </div>
                         <h4 class="font-bold text-[#003B82] text-sm">Computer Vision</h4>
-                        <p class="text-[11px] text-slate-500 mt-1 leading-tight">Entrenamiento IA<br>Detección Objetos
-                        </p>
-                        <span class="mt-3 px-2 py-1 bg-cyan-50 text-cyan-600 text-[10px] font-bold rounded">AI
-                            Expert</span>
+                        <p class="text-[11px] text-slate-500 mt-1 leading-tight">Entrenamiento IA<br>Detección Objetos</p>
+                        <span class="mt-3 px-2 py-1 bg-cyan-50 text-cyan-600 text-[10px] font-bold rounded">AI Expert</span>
                     </div>
 
-                    <div
-                        class="timeline-item flex flex-col items-center text-center relative z-10 bg-white border border-slate-100 p-4 rounded-2xl hover:shadow-md transition-shadow">
+                    <div class="timeline-item flex flex-col items-center text-center relative z-10 bg-white border border-slate-100 p-4 rounded-2xl hover:shadow-md transition-shadow">
                         <div class="mb-2">
                             <span class="text-[10px] uppercase tracking-wider font-bold text-slate-400">Mes 7-8</span>
                         </div>
-                        <div
-                            class="w-14 h-14 rounded-full bg-emerald-50 border-4 border-white shadow-sm flex items-center justify-center text-emerald-600 mb-3 font-bold text-xs">
+                        <div class="w-14 h-14 rounded-full bg-emerald-50 border-4 border-white shadow-sm flex items-center justify-center text-emerald-600 mb-3 font-bold text-xs">
                             FIN
                         </div>
                         <h4 class="font-bold text-[#003B82] text-sm">Go-Live Final</h4>
                         <p class="text-[11px] text-slate-500 mt-1 leading-tight">Vuelo Autónomo<br>& Operación Real</p>
-                        <span
-                            class="mt-3 px-2 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold rounded">DevOps</span>
+                        <span class="mt-3 px-2 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold rounded">DevOps</span>
                     </div>
 
                 </div>
             </div>
         </div>
 
-        <footer
-            class="mt-20 border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm font-[Segoe UI]">
+        <footer class="mt-20 border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm font-[Segoe UI]">
             <div class="flex items-center gap-2 mb-4 md:mb-0">
                 <img src="../assets/icon/zentra-icon.svg" alt="Icono"
                     class="h-6 opacity-50 grayscale hover:grayscale-0 transition-all">
