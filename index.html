@@ -6,29 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZENTRANR - Portafolio de Propuestas</title>
 
-    <!-- FAVICON -->
     <link rel="icon" type="image/svg+xml" href="./assets/icon/zentra-icon.svg">
 
-    <!-- LIBRERÍAS EXTERNAS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
-    <!-- ESTILOS CORPORATIVOS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
 
-    <!-- Encabezado con Branding -->
     <header class="gradient-header text-white py-8 px-4 shadow-lg relative overflow-hidden">
-        <!-- Detalle decorativo -->
-        <div
-            class="absolute top-0 right-0 w-64 h-full bg-gradient-to-l from-[#0072FF] to-transparent opacity-10 pointer-events-none">
+        <div class="absolute top-0 right-0 w-64 h-full bg-gradient-to-l from-[#0072FF] to-transparent opacity-10 pointer-events-none">
         </div>
 
         <div class="max-w-6xl mx-auto flex justify-between items-center relative z-10">
             <div>
-                <!-- LOGO DARKMODE -->
                 <img src="./assets/logos/zentra-logo-darkmode.svg" alt="ZENTRANR Logo" class="h-10 md:h-12 w-auto mb-2">
                 <p class="text-blue-100 text-sm font-light tracking-wide pl-1 font-[Segoe UI]">Soluciones Tecnológicas &
                     Consultoría de Software</p>
@@ -36,191 +29,187 @@
         </div>
     </header>
 
-    <!-- Contenido Principal -->
     <main class="max-w-6xl mx-auto py-12 px-4">
 
         <div class="mb-12 text-center">
-            <h2 class="text-3xl font-bold text-[#0D0D0D] mb-4">Propuestas de Modernización Digital</h2>
+            <h2 class="text-3xl font-bold text-[#0D0D0D] mb-2">Cartera de Modernización Digital</h2>
+            <p class="text-slate-500">Seleccione un proyecto para ver la arquitectura técnica y el roadmap de ejecución.</p>
         </div>
 
-        <!-- Grid de Proyectos -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- PROYECTO 1 -->
             <a href="./proyectos/01-normatividad.html" class="block h-full card-hover group">
-                <div
-                    class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm h-full flex flex-col relative">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#0072FF] to-[#00C6FF]"></div>
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm h-full flex flex-col relative transition-all duration-300 hover:shadow-xl">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal-400 to-teal-600"></div>
                     <div class="p-8 flex-1">
                         <div class="flex justify-between items-start mb-6">
-                            <div
-                                class="w-14 h-14 rounded-2xl bg-[#0072FF]/10 text-[#0072FF] flex items-center justify-center text-2xl shadow-sm group-hover:bg-[#0072FF] group-hover:text-white transition-colors">
+                            <div class="w-14 h-14 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center text-2xl shadow-sm group-hover:bg-teal-600 group-hover:text-white transition-colors">
                                 <i class="fas fa-book-reader"></i>
                             </div>
+                            <span class="px-2 py-1 rounded bg-teal-50 text-teal-700 text-[10px] font-bold uppercase tracking-wider border border-teal-100">
+                                <i class="fas fa-signal mr-1"></i> Nivel 1
+                            </span>
                         </div>
-                        <h3 class="text-xl font-bold text-[#0D0D0D] group-hover:text-[#0072FF] transition-colors mb-2">
+                        <h3 class="text-xl font-bold text-[#0D0D0D] group-hover:text-teal-600 transition-colors mb-2">
                             Normatividad Inteligente</h3>
                         <p class="text-[#555555] text-sm leading-relaxed font-[Segoe UI]">Asistente virtual ciudadano y
                             gestión documental potenciada con IA Generativa.</p>
                     </div>
-                    <div class="bg-[#F5F7FA] px-8 py-4 border-t border-gray-100 flex justify-between items-center">
-                        <div class="flex items-center gap-2">
-                            <i class="fab fa-microsoft text-[#0072FF]"></i>
-                            <span class="text-xs font-semibold text-gray-500 font-[Segoe UI]">Azure + Java</span>
+                    <div class="bg-[#F5F7FA] px-6 py-4 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500 font-medium">
+                        <div class="flex items-center gap-4">
+                            <span class="flex items-center gap-1"><i class="far fa-clock text-teal-500"></i> 4 Meses</span>
+                            <span class="hidden sm:inline">|</span>
+                            <span>Azure + Java</span>
                         </div>
-                        <i
-                            class="fas fa-arrow-right text-gray-300 group-hover:text-[#0072FF] transform group-hover:translate-x-1 transition-transform"></i>
+                        <i class="fas fa-arrow-right text-gray-300 group-hover:text-teal-600 transform group-hover:translate-x-1 transition-transform"></i>
                     </div>
                 </div>
             </a>
 
-            <!-- PROYECTO 2 -->
             <a href="./proyectos/02-habilitaciones.html" class="block h-full card-hover group">
-                <div
-                    class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm h-full flex flex-col relative">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#0072FF] to-[#00C6FF]"></div>
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm h-full flex flex-col relative transition-all duration-300 hover:shadow-xl">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-blue-600"></div>
                     <div class="p-8 flex-1">
                         <div class="flex justify-between items-start mb-6">
-                            <div
-                                class="w-14 h-14 rounded-2xl bg-[#0072FF]/10 text-[#0072FF] flex items-center justify-center text-2xl shadow-sm group-hover:bg-[#0072FF] group-hover:text-white transition-colors">
+                            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center text-2xl shadow-sm group-hover:bg-blue-600 group-hover:text-white transition-colors">
                                 <i class="fas fa-certificate"></i>
                             </div>
+                            <span class="px-2 py-1 rounded bg-blue-50 text-blue-700 text-[10px] font-bold uppercase tracking-wider border border-blue-100">
+                                <i class="fas fa-signal mr-1"></i> Nivel 2
+                            </span>
                         </div>
-                        <h3 class="text-xl font-bold text-[#0D0D0D] group-hover:text-[#0072FF] transition-colors mb-2">
-                            Habilitaciones y Cert.</h3>
+                        <h3 class="text-xl font-bold text-[#0D0D0D] group-hover:text-blue-600 transition-colors mb-2">
+                            Habilitaciones Digitales</h3>
                         <p class="text-[#555555] text-sm leading-relaxed font-[Segoe UI]">Validación automática de
                             requisitos documentales e identidad digital segura.</p>
                     </div>
-                    <div class="bg-[#F5F7FA] px-8 py-4 border-t border-gray-100 flex justify-between items-center">
-                        <div class="flex items-center gap-2">
-                            <i class="fab fa-microsoft text-[#0072FF]"></i>
-                            <span class="text-xs font-semibold text-gray-500 font-[Segoe UI]">Azure + KeyVault</span>
+                    <div class="bg-[#F5F7FA] px-6 py-4 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500 font-medium">
+                        <div class="flex items-center gap-4">
+                            <span class="flex items-center gap-1"><i class="far fa-clock text-blue-500"></i> 4 Meses</span>
+                            <span class="hidden sm:inline">|</span>
+                            <span>KeyVault</span>
                         </div>
-                        <i
-                            class="fas fa-arrow-right text-gray-300 group-hover:text-[#0072FF] transform group-hover:translate-x-1 transition-transform"></i>
+                        <i class="fas fa-arrow-right text-gray-300 group-hover:text-blue-600 transform group-hover:translate-x-1 transition-transform"></i>
                     </div>
                 </div>
             </a>
 
-            <!-- PROYECTO 3 -->
             <a href="./proyectos/03-sanciones.html" class="block h-full card-hover group">
-                <div
-                    class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm h-full flex flex-col relative">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#0072FF] to-[#00C6FF]"></div>
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm h-full flex flex-col relative transition-all duration-300 hover:shadow-xl">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-400 to-amber-600"></div>
                     <div class="p-8 flex-1">
                         <div class="flex justify-between items-start mb-6">
-                            <div
-                                class="w-14 h-14 rounded-2xl bg-[#0072FF]/10 text-[#0072FF] flex items-center justify-center text-2xl shadow-sm group-hover:bg-[#0072FF] group-hover:text-white transition-colors">
+                            <div class="w-14 h-14 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl shadow-sm group-hover:bg-amber-600 group-hover:text-white transition-colors">
                                 <i class="fas fa-gavel"></i>
                             </div>
+                            <span class="px-2 py-1 rounded bg-amber-50 text-amber-700 text-[10px] font-bold uppercase tracking-wider border border-amber-100">
+                                <i class="fas fa-signal mr-1"></i> Nivel 3
+                            </span>
                         </div>
-                        <h3 class="text-xl font-bold text-[#0D0D0D] group-hover:text-[#0072FF] transition-colors mb-2">
+                        <h3 class="text-xl font-bold text-[#0D0D0D] group-hover:text-amber-600 transition-colors mb-2">
                             Sanciones Inteligentes</h3>
                         <p class="text-[#555555] text-sm leading-relaxed font-[Segoe UI]">Predicción de incumplimientos
                             y generación automática de resoluciones sancionadoras.</p>
                     </div>
-                    <div class="bg-[#F5F7FA] px-8 py-4 border-t border-gray-100 flex justify-between items-center">
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-chart-line text-[#0072FF]"></i>
-                            <span class="text-xs font-semibold text-gray-500 font-[Segoe UI]">Azure ML</span>
+                    <div class="bg-[#F5F7FA] px-6 py-4 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500 font-medium">
+                        <div class="flex items-center gap-4">
+                            <span class="flex items-center gap-1"><i class="far fa-clock text-amber-500"></i> 4 Meses</span>
+                            <span class="hidden sm:inline">|</span>
+                            <span>Azure ML</span>
                         </div>
-                        <i
-                            class="fas fa-arrow-right text-gray-300 group-hover:text-[#0072FF] transform group-hover:translate-x-1 transition-transform"></i>
+                        <i class="fas fa-arrow-right text-gray-300 group-hover:text-amber-600 transform group-hover:translate-x-1 transition-transform"></i>
                     </div>
                 </div>
             </a>
 
-            <!-- PROYECTO 4 -->
             <a href="./proyectos/04-laboratorio.html" class="block h-full card-hover group">
-                <div
-                    class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm h-full flex flex-col relative">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#0072FF] to-[#00C6FF]"></div>
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm h-full flex flex-col relative transition-all duration-300 hover:shadow-xl">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-orange-600"></div>
                     <div class="p-8 flex-1">
                         <div class="flex justify-between items-start mb-6">
-                            <div
-                                class="w-14 h-14 rounded-2xl bg-[#0072FF]/10 text-[#0072FF] flex items-center justify-center text-2xl shadow-sm group-hover:bg-[#0072FF] group-hover:text-white transition-colors">
+                            <div class="w-14 h-14 rounded-2xl bg-orange-50 text-orange-600 flex items-center justify-center text-2xl shadow-sm group-hover:bg-orange-600 group-hover:text-white transition-colors">
                                 <i class="fas fa-flask"></i>
                             </div>
+                            <span class="px-2 py-1 rounded bg-orange-50 text-orange-700 text-[10px] font-bold uppercase tracking-wider border border-orange-100">
+                                <i class="fas fa-signal mr-1"></i> Nivel 4
+                            </span>
                         </div>
-                        <h3 class="text-xl font-bold text-[#0D0D0D] group-hover:text-[#0072FF] transition-colors mb-2">
+                        <h3 class="text-xl font-bold text-[#0D0D0D] group-hover:text-orange-600 transition-colors mb-2">
                             Laboratorio Digital</h3>
                         <p class="text-[#555555] text-sm leading-relaxed font-[Segoe UI]">Gestión de muestras,
                             trazabilidad blockchain y predicción de carga laboral.</p>
                     </div>
-                    <div class="bg-[#F5F7FA] px-8 py-4 border-t border-gray-100 flex justify-between items-center">
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-project-diagram text-[#0072FF]"></i>
-                            <span class="text-xs font-semibold text-gray-500 font-[Segoe UI]">IoT + Big Data</span>
+                    <div class="bg-[#F5F7FA] px-6 py-4 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500 font-medium">
+                        <div class="flex items-center gap-4">
+                            <span class="flex items-center gap-1"><i class="far fa-clock text-orange-500"></i> 5 Meses</span>
+                            <span class="hidden sm:inline">|</span>
+                            <span>IoT + Blockchain</span>
                         </div>
-                        <i
-                            class="fas fa-arrow-right text-gray-300 group-hover:text-[#0072FF] transform group-hover:translate-x-1 transition-transform"></i>
+                        <i class="fas fa-arrow-right text-gray-300 group-hover:text-orange-600 transform group-hover:translate-x-1 transition-transform"></i>
                     </div>
                 </div>
             </a>
 
-            <!-- PROYECTO 5 -->
             <a href="./proyectos/05-sanidad.html" class="block h-full card-hover group">
-                <div
-                    class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm h-full flex flex-col relative">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#0072FF] to-[#00C6FF]"></div>
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm h-full flex flex-col relative transition-all duration-300 hover:shadow-xl">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-400 to-red-600"></div>
                     <div class="p-8 flex-1">
                         <div class="flex justify-between items-start mb-6">
-                            <div
-                                class="w-14 h-14 rounded-2xl bg-[#0072FF]/10 text-[#0072FF] flex items-center justify-center text-2xl shadow-sm group-hover:bg-[#0072FF] group-hover:text-white transition-colors">
+                            <div class="w-14 h-14 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center text-2xl shadow-sm group-hover:bg-red-600 group-hover:text-white transition-colors">
                                 <i class="fas fa-shield-virus"></i>
                             </div>
+                            <span class="px-2 py-1 rounded bg-red-50 text-red-700 text-[10px] font-bold uppercase tracking-wider border border-red-100">
+                                <i class="fas fa-signal mr-1"></i> Nivel 5
+                            </span>
                         </div>
-                        <h3 class="text-xl font-bold text-[#0D0D0D] group-hover:text-[#0072FF] transition-colors mb-2">
+                        <h3 class="text-xl font-bold text-[#0D0D0D] group-hover:text-red-600 transition-colors mb-2">
                             Sanidad e Inocuidad</h3>
                         <p class="text-[#555555] text-sm leading-relaxed font-[Segoe UI]">Centralización de alertas
                             sanitarias y clasificación automática multicanal.</p>
                     </div>
-                    <div class="bg-[#F5F7FA] px-8 py-4 border-t border-gray-100 flex justify-between items-center">
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-brain text-[#0072FF]"></i>
-                            <span class="text-xs font-semibold text-gray-500 font-[Segoe UI]">NLP + AI</span>
+                    <div class="bg-[#F5F7FA] px-6 py-4 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500 font-medium">
+                        <div class="flex items-center gap-4">
+                            <span class="flex items-center gap-1"><i class="far fa-clock text-red-500"></i> 6 Meses</span>
+                            <span class="hidden sm:inline">|</span>
+                            <span>NLP + Integración</span>
                         </div>
-                        <i
-                            class="fas fa-arrow-right text-gray-300 group-hover:text-[#0072FF] transform group-hover:translate-x-1 transition-transform"></i>
+                        <i class="fas fa-arrow-right text-gray-300 group-hover:text-red-600 transform group-hover:translate-x-1 transition-transform"></i>
                     </div>
                 </div>
             </a>
 
-            <!-- PROYECTO 6 -->
             <a href="./proyectos/06-fiscalizacion.html" class="block h-full card-hover group">
-                <div
-                    class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm h-full flex flex-col relative">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#0072FF] to-[#00C6FF]"></div>
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm h-full flex flex-col relative transition-all duration-300 hover:shadow-xl ring-1 ring-transparent hover:ring-purple-200">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-indigo-600"></div>
                     <div class="p-8 flex-1">
                         <div class="flex justify-between items-start mb-6">
-                            <div
-                                class="w-14 h-14 rounded-2xl bg-[#0072FF]/10 text-[#0072FF] flex items-center justify-center text-2xl shadow-sm group-hover:bg-[#0072FF] group-hover:text-white transition-colors">
+                            <div class="w-14 h-14 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center text-2xl shadow-sm group-hover:bg-purple-600 group-hover:text-white transition-colors">
                                 <i class="fas fa-satellite-dish"></i>
                             </div>
+                            <span class="px-2 py-1 rounded bg-purple-50 text-purple-700 text-[10px] font-bold uppercase tracking-wider border border-purple-100">
+                                <i class="fas fa-signal mr-1"></i> Crítico
+                            </span>
                         </div>
-                        <h3 class="text-xl font-bold text-[#0D0D0D] group-hover:text-[#0072FF] transition-colors mb-2">
+                        <h3 class="text-xl font-bold text-[#0D0D0D] group-hover:text-purple-600 transition-colors mb-2">
                             Fiscalización Inteligente</h3>
-                        <p class="text-[#555555] text-sm leading-relaxed font-[Segoe UI]">Uso de IoT y Drones para
-                            control y validación remota en tiempo real.</p>
+                        <p class="text-[#555555] text-sm leading-relaxed font-[Segoe UI]">Uso de IoT, Drones y Visión Computacional para control remoto.</p>
                     </div>
-                    <div class="bg-[#F5F7FA] px-8 py-4 border-t border-gray-100 flex justify-between items-center">
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-wifi text-[#0072FF]"></i>
-                            <span class="text-xs font-semibold text-gray-500 font-[Segoe UI]">Azure IoT</span>
+                    <div class="bg-[#F5F7FA] px-6 py-4 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500 font-medium">
+                        <div class="flex items-center gap-4">
+                            <span class="flex items-center gap-1"><i class="far fa-clock text-purple-500"></i> 8 Meses</span>
+                            <span class="hidden sm:inline">|</span>
+                            <span>Edge AI + Hardware</span>
                         </div>
-                        <i
-                            class="fas fa-arrow-right text-gray-300 group-hover:text-[#0072FF] transform group-hover:translate-x-1 transition-transform"></i>
+                        <i class="fas fa-arrow-right text-gray-300 group-hover:text-purple-600 transform group-hover:translate-x-1 transition-transform"></i>
                     </div>
                 </div>
             </a>
 
         </div>
 
-        <footer
-            class="mt-20 border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm font-[Segoe UI]">
+        <footer class="mt-20 border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm font-[Segoe UI]">
             <div class="flex items-center gap-2 mb-4 md:mb-0">
-                <img src="./assets/icon/zentra-icon.svg" alt="Icono"
-                    class="h-6 opacity-50 grayscale hover:grayscale-0 transition-all">
+                <img src="./assets/icon/zentra-icon.svg" alt="Icono" class="h-6 opacity-50 grayscale hover:grayscale-0 transition-all">
                 <p>&copy; 2026 ZENTRANR E.I.R.L.</p>
             </div>
             <p>RUC: 20615150607 | San Juan de Lurigancho, Lima</p>
