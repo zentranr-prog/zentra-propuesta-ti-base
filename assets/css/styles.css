@@ -1,4 +1,4 @@
-/* 🟦 HOJA DE ESTILOS CORPORATIVA - ZENTRANR E.I.R.L.
+/* 🟦 HOJA DE ESTILOS CORPORATIVA - ZENTRANR E.I.R.L. 
    Uso: Importar en todos los archivos HTML del proyecto.
 */
 
@@ -8,9 +8,17 @@
 /* --- TIPOGRAFÍA Y BASE --- */
 body {
     font-family: 'Segoe UI', 'Roboto', system-ui, sans-serif;
-    background-color: #F5F7FA; /* Fondo gris muy suave corporativo */
+    background-color: #F0F4F8; /* Fondo gris azulado muy suave */
     color: #555555;
     margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selección de texto con color corporativo */
+::selection {
+    background-color: #E0F2FE; /* blue-100 */
+    color: #1E3A8A; /* blue-900 */
 }
 
 /* Títulos de Alto Impacto (Branding) */
@@ -22,38 +30,16 @@ h1, h2, h3, .brand-font {
 }
 
 /* --- COMPONENTES GLOBALES --- */
-
-/* Gradiente Corporativo (Header) */
 .gradient-header {
     background: linear-gradient(135deg, #001F4D 0%, #003B82 100%);
 }
 
-/* --- ESTILOS DE PORTADA (INDEX) --- */
-.card-hover {
-    transition: all 0.3s ease;
-}
-.card-hover:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px -5px rgba(0, 59, 130, 0.15); /* Sombra azulada */
-}
-
-/* --- ESTILOS DE PROYECTOS (DIAPOSITIVAS) --- */
-
-/* Clase especial para el BODY de las diapositivas para centrar el contenido */
-body.project-mode {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    padding: 40px 20px;
-}
-
-/* Botón Volver */
 .back-nav {
     width: 100%;
     max-width: 1100px;
     margin-bottom: 20px;
 }
+
 .back-link {
     color: #555555;
     text-decoration: none;
@@ -68,32 +54,147 @@ body.project-mode {
     transition: all 0.2s;
     font-family: 'Segoe UI', sans-serif;
 }
+
 .back-link:hover {
-    color: #0072FF; /* Zentra Blue */
+    color: #0072FF;
     transform: translateX(-3px);
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Contenedor de la Diapositiva (16:9) */
+/* --- TARJETAS --- */
+.card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px -5px rgba(0, 59, 130, 0.15);
+}
+
+.module-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-left: 4px solid transparent;
+}
+.module-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 114, 255, 0.1), 0 4px 6px -2px rgba(0, 114, 255, 0.05);
+    border-left-color: #00C6FF;
+}
+
+.tech-card {
+    border-left: 5px solid #0072FF;
+    transition: all 0.3s ease;
+}
+.tech-card:hover {
+    border-left-color: #00C6FF;
+    background-color: #f8fafc;
+}
+
+/* --- LAYOUT PROYECTOS --- */
+body.project-mode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
 .slide-container {
     width: 100%;
     max-width: 1100px;
-    aspect-ratio: 16/9;
     background: white;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     overflow: hidden;
     position: relative;
-    /* margin-bottom eliminado según última corrección */
+    border-radius: 1rem;
 }
 
-/* Tarjeta de Tecnología (Stack) */
-.tech-card {
-    border-left: 5px solid #0072FF; /* Zentra Blue */
-    transition: all 0.3s ease;
+/* --- TIMELINE ÁGIL (CORREGIDO PARA MÓVIL) --- */
+.timeline-item {
+    position: relative;
+    z-index: 10;
+    background-color: white; /* Importante: fondo sólido */
 }
-.tech-card:hover {
-    border-left-color: #00C6FF; /* Cyan Innov */
-    background-color: #f8fafc;
+
+.timeline-item.bg-green-50\/30 { 
+    background-color: #f0fdf4 !important; /* Un verde muy claro sólido, no traslúcido */
+    z-index: 20; /* Mayor que los demás para que al escalar no se vea la línea */
+}
+
+/* DESKTOP (> 1024px) */
+@media (min-width: 1024px) {
+    .timeline-container { 
+        display: grid;
+        grid-template-columns: repeat(7, 1fr); /* 7 columnas fijas para desktop */
+        gap: 1.5rem;
+        position: relative; 
+        padding-top: 0; 
+    }
+    .timeline-container::before {
+        content: '';
+        position: absolute;
+        top: 3.3rem; 
+        left: 3%; 
+        width: 94%; 
+        height: 4px; 
+        background-color: #e2e8f0;
+        z-index: 0;
+        border-radius: 4px;
+    }
+}
+
+/* MOBILE (< 1023px) */
+@media (max-width: 1023px) {
+    .timeline-container { 
+        display: flex; /* Flex en lugar de Grid para control total */
+        flex-direction: column;
+        position: relative; 
+        /* Eliminamos padding extra */
+        padding-left: 0;
+    }
+    .timeline-container::before {
+        content: '';
+        position: absolute;
+        top: 1rem;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 3px;
+        background-color: #e2e8f0;
+        z-index: 0;
+    }
+    .timeline-item {
+        /* CORRECCIÓN: Margen vertical reducido */
+        margin-bottom: 1.5rem; 
+        background: white; 
+        padding: 1.25rem;
+        border-radius: 1rem;
+        border: 1px solid #f1f5f9;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        /* Ancho completo */
+        width: 100%;
+        z-index: 10;
+    }
+    .timeline-item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.timeline-header-spacer {
+    min-height: 24px; 
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #e2e8f0; /* slate-200 */
+  z-index: 0;
 }
